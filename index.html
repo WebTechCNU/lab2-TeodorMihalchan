@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Інтернет-магазин «Pro-Corm»</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <script src="js/cards_script.js" async></script>
+    <script src="js/ad.js" async></script>
+    <script src="js/sub.js" async></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="horizontal-list">
+          <li class="nav_check"><a href="#"><img src="images/icon.png" alt="Головна" title="Головна" height="35px" min-height="25px"></a></li>
+          <li class="nav_check"><a href="#" alt="Каталог" title="Каталог">Каталог</a></li>
+          <li><input type="text" alt="Пошук" title="Що хочете знайти?" placeholder="Я шукаю..."><button class="nav_search">Знайти</button></li>
+          <li class="nav_check"><a href="#"><img src="images/log_in.svg" alt="Увійти" title="Увійти" height="35px" min-height="25px"></a></li>
+          <li class="nav_check"><a href="#"><img src="images/store_trash.svg" alt="Корзина" title="Корзина" height="35px" min-height="25px"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="filter_container">
+        <input type="text" id="filter-input" placeholder="Введіть ключове слово...">
+        <button id="filter-button">Фільтр</button>
+        <button id="reset-button">Скинути</button>
+      </div>
+      
+      <div id="card-grid"></div>
+      <div class="outer_button">
+        <button id="load-more-button" class="button_add">Показати ще..</button>
+      </div>
+      <button id="back-to-top-btn" onclick="scrollToTop()">▲</button>
+    </main>
+    <footer>
+      © Created by Mihalchan Teodor
+    </footer>
+    <div id="sub"></div>
+  </body>
+</html>
+
+
